@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Configurer les paramètres de l'email
-    $recipient = "serrurot19@gmail.com"; // Remplace par ton adresse email
+    $recipient = "***";
     $subject = "Nouveau message de $nom";
     $email_content = "Nom: $nom\n";
     $email_content .= "Email: $email\n\n";
