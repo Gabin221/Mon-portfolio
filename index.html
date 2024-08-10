@@ -12,7 +12,7 @@
             <h1>Gabin Serrurot</h1>
             <button class="menu-toggle" aria-label="Open Menu">&#9776;</button>
             <nav>
-                <ul>
+                <ul class="nav-list">
                     <li><a href="#about">À propos</a></li>
                     <li><a href="#skills">Compétences</a></li>
                     <li><a href="#projects">Projets</a></li>
@@ -41,14 +41,43 @@
     <section id="skills">
         <div class="container">
             <h2>Compétences</h2>
-            <p>Je maîtrise : HTML, CSS, JavaScript, LaTeX, Python, C++, Kotlin, et j'ai des notions de Bash. Je suis en train d'apprendre React.</p>
+            <p>Je maîtrise : HTML, CSS, JavaScript, LaTeX, Python, C++, Kotlin, et j'ai des notions de Bash.</p>
         </div>
     </section>
 
     <section id="projects">
         <div class="container">
             <h2>Projets</h2>
-            <p>Listez ici quelques projets sur lesquels vous avez travaillé. Décrivez brièvement chaque projet, les technologies utilisées, et les résultats obtenus.</p>
+            <a href="https://github.com/Gabin221/Exercism" class="link-card">
+                <div class="project">
+                    <h3>Exercism</h3>
+                    <p>Ce dépôt contient mes solutions aux exercices de programmation sur la plateforme Exercism. J'ai abordé divers langages tels que Python et Kotlin, ce qui m'a permis d'améliorer mes compétences en résolution de problèmes et d'approfondir ma compréhension de concepts clés en programmation.</p>
+                </div>
+            </a>
+            <a href="https://github.com/Gabin221/Tracking-BLE" class="link-card">
+                <div class="project">
+                    <h3>Tracking-BLE</h3>
+                    <p>Cette application mobile explore l'utilisation du Bluetooth Low Energy (BLE) pour le suivi et la localisation d'objets. J'ai travaillé sur l'intégration des technologies BLE avec des outils de développement Android, en utilisant Kotlin pour créer des applications de suivi. Ce projet est une preuve de concept pour l'entreprise <a class="hyperlien" href="https://www.bnbeacon.com">Blue Net Beacon</a>.</p>
+                </div>
+            </a>
+            <a href="https://github.com/Gabin221/Gabin-s-bar" class="link-card">
+                <div class="project">
+                    <h3>Gabin's Bar</h3>
+                    <p>Ce projet personnel est une application mobile servant à centraliser une liste de boissons dans diverses catégories. Les utilisateurs connectés peuvent ainsi ajouter des articles à un panier et passer une commande.</p>
+                </div>
+            </a>
+            <a href="https://github.com/Gabin221/LauncherCode" class="link-card">
+                <div class="project">
+                    <h3>LauncherCode</h3>
+                    <p>Ce script Bash permet, lorsqu'il est exécuté, de créer un (ou plusieurs) fichier de base pour divers langages de programmation. Ces fichiers sont initialisés avec le programme <b>Hello World!</b>, l'objectif étant d'avoir un fichier immédiatement exécutable.</p>
+                </div>
+            </a>
+            <a href="https://github.com/Gabin221/ClassInitiator" class="link-card">
+                <div class="project">
+                    <h3>ClassInitiator</h3>
+                    <p>Ce script Bash permet de créer le fichier <b>.h</b> et le fichier <b>.cpp</b> lorsqu'on travaille en <b>POO</b> et qu'on veut créer une nouvelle classe en C++.</p>
+                </div>
+            </a>
         </div>
     </section>
 
@@ -69,8 +98,22 @@
     <section id="contact">
         <div class="container">
             <h2>Contact</h2>
-            <p>Pour me contacter, veuillez remplir le formulaire ci-dessous ou me retrouver sur <a href="https://github.com/votreprofil">GitHub</a> et <a href="https://www.linkedin.com/in/votreprofil">LinkedIn</a>.</p>
-            <!-- Formulaire de contact à ajouter ici -->
+            <form action="traitement_contact.php" method="post">
+                <div class="form-group">
+                    <label for="name">Nom</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Envoyer</button>
+            </form>
+            <p>Vous pouvez aussi me retrouver sur <a class="hyperlien" href="https://github.com/Gabin221">GitHub</a> et <a class="hyperlien" href="https://www.linkedin.com/in/gabin-serrurot-877a38253/">LinkedIn</a>.</p>
         </div>
     </section>
 

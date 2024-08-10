@@ -1,12 +1,12 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const text = "Bienvenue sur le portfolio de Gabin Serrurot, développeur passionné par le code.";
+    const text = "Bienvenue sur le portfolio de Gabin Serrurot";
     let index = 0;
 
     function typeWriter() {
         if (index < text.length) {
             document.getElementById('typewriter').textContent += text.charAt(index);
             index++;
-            setTimeout(typeWriter, 50);
+            setTimeout(typeWriter, 70);
         }
     }
 
