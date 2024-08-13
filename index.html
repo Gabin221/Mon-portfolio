@@ -1,28 +1,39 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gabin Serrurot - Développeur</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <div class="container">
-            <h1>Gabin Serrurot</h1>
-            <button class="menu-toggle" aria-label="Open Menu">&#9776;</button>
-            <nav>
-                <ul class="nav-list">
-                    <li><a href="#about">À propos</a></li>
-                    <li><a href="#skills">Compétences</a></li>
-                    <li><a href="#projects">Projets</a></li>
-                    <li><a href="#experience">Expérience</a></li>
-                    <li><a href="#education">Formation</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+    <nav>
+        <div class="navbar">
+            <div class="container nav-container">
+                <input class="checkbox" type="checkbox" name="" id="menu-checkbox" />
+                <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>
+                <div class="logo">
+                    <h1>Gabin Serrurot</h1>
+                </div>
+                <div class="menu-items">
+                    <li><a href="#intro" class="menu-item">Accueil</a></li>
+                    <li><a href="#about" class="menu-item">À propos</a></li>
+                    <li><a href="#skills" class="menu-item">Compétences</a></li>
+                    <li><a href="#projects" class="menu-item">Projets</a></li>
+                    <li><a href="#experience" class="menu-item">Expérience</a></li>
+                    <li><a href="#education" class="menu-item">Formation</a></li>
+                    <li><a href="#contact" class="menu-item">Contact</a></li>
+                </div>
+            </div>
         </div>
-    </header>
+    </nav>
 
     <section id="intro">
         <div class="intro-text">
@@ -34,7 +45,9 @@
     <section id="about">
         <div class="container">
             <h2>À propos de moi</h2>
-            <p>Né le 5 mars 1999, après un bac S, j'ai suivi une licence de physique entre 2018 et 2022. Passionné par l'informatique, j'ai décidé de me réorienter et j'ai récemment obtenu un BTS Systèmes Numériques option Informatique et Réseaux. Je cherche à devenir développeur.</p>
+            <p>Né le 5 mars 1999, après un bac S, j'ai suivi une licence de physique entre 2018 et 2022. Passionné par
+                l'informatique, j'ai décidé de me réorienter et j'ai récemment obtenu un BTS Systèmes Numériques option
+                Informatique et Réseaux. Je cherche à devenir développeur.</p>
         </div>
     </section>
 
@@ -51,31 +64,43 @@
             <a href="https://github.com/Gabin221/Exercism" class="link-card">
                 <div class="project">
                     <h3>Exercism</h3>
-                    <p>Ce dépôt contient mes solutions aux exercices de programmation sur la plateforme Exercism. J'ai abordé divers langages tels que Python et Kotlin, ce qui m'a permis d'améliorer mes compétences en résolution de problèmes et d'approfondir ma compréhension de concepts clés en programmation.</p>
+                    <p>Ce dépôt contient mes solutions aux exercices de programmation sur la plateforme Exercism. J'ai
+                        abordé divers langages tels que Python et Kotlin, ce qui m'a permis d'améliorer mes compétences
+                        en résolution de problèmes et d'approfondir ma compréhension de concepts clés en programmation.
+                    </p>
                 </div>
             </a>
             <a href="https://github.com/Gabin221/Tracking-BLE" class="link-card">
                 <div class="project">
                     <h3>Tracking-BLE</h3>
-                    <p>Cette application mobile explore l'utilisation du Bluetooth Low Energy (BLE) pour le suivi et la localisation d'objets. J'ai travaillé sur l'intégration des technologies BLE avec des outils de développement Android, en utilisant Kotlin pour créer des applications de suivi. Ce projet est une preuve de concept pour l'entreprise <a class="hyperlien" href="https://www.bnbeacon.com">Blue Net Beacon</a>.</p>
+                    <p>Cette application mobile explore l'utilisation du Bluetooth Low Energy (BLE) pour le suivi et la
+                        localisation d'objets. J'ai travaillé sur l'intégration des technologies BLE avec des outils de
+                        développement Android, en utilisant Kotlin pour créer des applications de suivi. Ce projet est
+                        une preuve de concept pour l'entreprise <a class="hyperlien"
+                            href="https://www.bnbeacon.com">Blue Net Beacon</a>.</p>
                 </div>
             </a>
             <a href="https://github.com/Gabin221/Gabin-s-bar" class="link-card">
                 <div class="project">
                     <h3>Gabin's Bar</h3>
-                    <p>Ce projet personnel est une application mobile servant à centraliser une liste de boissons dans diverses catégories. Les utilisateurs connectés peuvent ainsi ajouter des articles à un panier et passer une commande.</p>
+                    <p>Ce projet personnel est une application mobile servant à centraliser une liste de boissons dans
+                        diverses catégories. Les utilisateurs connectés peuvent ainsi ajouter des articles à un panier
+                        et passer une commande.</p>
                 </div>
             </a>
             <a href="https://github.com/Gabin221/LauncherCode" class="link-card">
                 <div class="project">
                     <h3>LauncherCode</h3>
-                    <p>Ce script Bash permet, lorsqu'il est exécuté, de créer un (ou plusieurs) fichier de base pour divers langages de programmation. Ces fichiers sont initialisés avec le programme <b>Hello World!</b>, l'objectif étant d'avoir un fichier immédiatement exécutable.</p>
+                    <p>Ce script Bash permet, lorsqu'il est exécuté, de créer un (ou plusieurs) fichier de base pour
+                        divers langages de programmation. Ces fichiers sont initialisés avec le programme <b>Hello
+                            World!</b>, l'objectif étant d'avoir un fichier immédiatement exécutable.</p>
                 </div>
             </a>
             <a href="https://github.com/Gabin221/ClassInitiator" class="link-card">
                 <div class="project">
                     <h3>ClassInitiator</h3>
-                    <p>Ce script Bash permet de créer le fichier <b>.h</b> et le fichier <b>.cpp</b> lorsqu'on travaille en <b>POO</b> et qu'on veut créer une nouvelle classe en C++.</p>
+                    <p>Ce script Bash permet de créer le fichier <b>.h</b> et le fichier <b>.cpp</b> lorsqu'on travaille
+                        en <b>POO</b> et qu'on veut créer une nouvelle classe en C++.</p>
                 </div>
             </a>
         </div>
@@ -84,14 +109,16 @@
     <section id="experience">
         <div class="container">
             <h2>Expérience</h2>
-            <p>Je travaille depuis plus de 5 ans à Carrefour. Bien que ce ne soit pas une expérience de développement, cela démontre ma capacité à travailler de manière régulière et fiable.</p>
+            <p>Je travaille depuis plus de 5 ans à Carrefour. Bien que ce ne soit pas une expérience de développement,
+                cela démontre ma capacité à travailler de manière régulière et fiable.</p>
         </div>
     </section>
 
     <section id="education">
         <div class="container">
             <h2>Formation</h2>
-            <p>J'ai obtenu un DEUG de Physique à l'UFR ST de Besançon en 2020 et un BTS Systèmes Numériques option Informatique et Réseaux au Lycée Jules Haag en 2024.</p>
+            <p>J'ai obtenu un DEUG de Physique à l'UFR ST de Besançon en 2020 et un BTS Systèmes Numériques option
+                Informatique et Réseaux au Lycée Jules Haag en 2024.</p>
         </div>
     </section>
 
@@ -113,10 +140,14 @@
                 </div>
                 <button type="submit">Envoyer</button>
             </form>
-            <p>Vous pouvez aussi me retrouver sur <a class="hyperlien" href="https://github.com/Gabin221">GitHub</a> et <a class="hyperlien" href="https://www.linkedin.com/in/gabin-serrurot-877a38253/">LinkedIn</a>.</p>
+            <p>Vous pouvez aussi me retrouver sur <a class="hyperlien" href="https://github.com/Gabin221">GitHub</a> et
+                <a class="hyperlien" href="https://www.linkedin.com/in/gabin-serrurot-877a38253/">LinkedIn</a>.
+            </p>
         </div>
     </section>
 
     <script src="saisie.js"></script>
+    <script src="menu.js"></script>
 </body>
+
 </html>

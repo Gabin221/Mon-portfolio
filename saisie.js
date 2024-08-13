@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // Menu toggle
-    document.querySelector('.menu-toggle').addEventListener('click', function () {
-        document.querySelector('header nav').classList.toggle('active');
-    });
+    // document.querySelector('.menu-toggle').addEventListener('click', function () {
+    //     document.querySelector('header nav').classList.toggle('active');
+    // });
 });
