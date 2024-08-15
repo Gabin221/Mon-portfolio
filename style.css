@@ -204,12 +204,30 @@ section p {
 
 #contact form {
     max-width: 600px;
-    margin: 0 auto 40px auto;
-    text-align: left;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
 }
 
-.form-group {
-    margin-bottom: 20px;
+#contact label, #contact input, #contact textarea {
+    width: 90%;
+    margin: auto;
+}
+
+#contact input, #contact textarea {
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* .form-group {
+    margin: auto auto 20px auto;
+    width: 90%;
+    background-color: rebeccapurple;
 }
 
 .form-group label {
@@ -220,13 +238,13 @@ section p {
 
 .form-group input,
 .form-group textarea {
-    width: 90%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 1em;
     font-family: 'Roboto', sans-serif;
-}
+    width: 95%;
+} */
 
 button[type="submit"] {
     background: #333;
