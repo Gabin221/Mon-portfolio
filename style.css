@@ -550,7 +550,7 @@ li:nth-child(8) .card {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    background: #333;
+    background: #00aaff;
     opacity: 0.5;
     box-shadow: 0px 18px 36px -18px rgba(12, 5, 46, 0.3), 0px 30px 60px -12px rgba(12, 5, 46, 0.25);
     border-radius: 50%;
@@ -563,7 +563,7 @@ li:nth-child(8) .card {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    background: #333;
+    background: #00aaff;
     opacity: 0.25;
     box-shadow: 0px 18px 36px -18px rgba(12, 5, 46, 0.3), 0px 30px 60px -12px rgba(12, 5, 46, 0.25);
     border-radius: 50%;
@@ -582,7 +582,7 @@ li:nth-child(8) .card {
     animation: pulseGlow 4s linear infinite alternate;
     background-position: 100% 50%;
     background-repeat: no-repeat;
-    background-image: radial-gradient(100% 50% at 100% 50%, rgba(48, 48, 48, 0.9) 0%, rgba(48, 48, 48, 0.75) 11.79%, rgba(48, 48, 48, 0.65) 21.38%, rgba(48, 48, 48, 0.55) 29.12%, rgba(48, 48, 48, 0.45) 35.34%, rgba(48, 48, 48, 0.35) 40.37%, rgba(48, 48, 48, 0.25) 44.56%, rgba(48, 48, 48, 0.2) 48.24%, rgba(48, 48, 48, 0.15) 51.76%, rgba(48, 48, 48, 0.1) 55.44%, rgba(48, 48, 48, 0.05) 59.63%, rgba(48, 48, 48, 0.02) 64.66%, rgba(48, 48, 48, 0.01) 70.88%, rgba(48, 48, 48, 0) 100%);
+    background-image: radial-gradient(100% 50% at 100% 50%, rgba(0, 170, 255, 0.9) 0%, rgba(0, 170, 255, 0.75) 11.79%, rgba(0, 170, 255, 0.65) 21.38%, rgba(0, 170, 255, 0.55) 29.12%, rgba(0, 170, 255, 0.45) 35.34%, rgba(0, 170, 255, 0.35) 40.37%, rgba(0, 170, 255, 0.25) 44.56%, rgba(0, 170, 255, 0.2) 48.24%, rgba(0, 170, 255, 0.15) 51.76%, rgba(0, 170, 255, 0.1) 55.44%, rgba(0, 170, 255, 0.05) 59.63%, rgba(0, 170, 255, 0.02) 64.66%, rgba(0, 170, 255, 0.01) 70.88%, rgba(0, 170, 255, 0) 100%);
 }
 
 .mask:after {
@@ -592,7 +592,24 @@ li:nth-child(8) .card {
     height: 100%;
     right: 0;
     display: block;
-    background-image: linear-gradient(180deg, rgba(48, 48, 48, 0) 0%, #333 50%, rgba(48, 48, 48, 0) 100%);
+    background-image: linear-gradient(180deg, rgba(0, 170, 255, 0) 0%, #00aaff 50%, rgba(0, 170, 255, 0) 100%);
+}
+
+.model-name {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.titreProjet {
+    margin: 0;
+}
+
+.langageProjet {
+    margin: 0;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: #00aaff;
 }
 
 @keyframes display {
