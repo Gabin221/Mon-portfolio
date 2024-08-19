@@ -649,6 +649,33 @@ img:nth-child(3) {
     color: inherit;
 }
 
+@keyframes display {
+    0% {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+
+    10% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    30% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    40% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+}
+
 @keyframes rotateCW {
     from {
         transform: translate3d(0px, -50%, -1px) rotate(-45deg);
