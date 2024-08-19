@@ -1,10 +1,14 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const text = "Bienvenue sur le portfolio de Gabin Serrurot";
+    const text = `Gabin Serrurot-Portfolio`;
     let index = 0;
 
     function typeWriter() {
         if (index < text.length) {
-            document.getElementById('typewriter').textContent += text.charAt(index);
+            if (text.charAt(index) == "-") {
+                document.getElementById('typewriter').innerHTML += `<br> - <br>`;
+            } else {
+                document.getElementById('typewriter').innerHTML += text.charAt(index);
+            }
             index++;
             setTimeout(typeWriter, 70);
         }
