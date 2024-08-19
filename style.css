@@ -41,7 +41,7 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: ;
+    align-items: center;
     position: absolute;
     top: 62px;
     left: 0;
@@ -395,7 +395,7 @@ img:nth-child(3) {
     animation-delay: 6s;
 }
 
-.void {
+#projects .void {
     width: 80%;
     /* max-width: 1024px; */
     margin: 50px 0 0 0;
@@ -403,11 +403,11 @@ img:nth-child(3) {
     /* aspect-ratio: 4/1; */
 }
 
-ul:hover * {
+#projects ul:hover * {
     animation-play-state: paused;
 }
 
-ul {
+#projects ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -418,7 +418,7 @@ ul {
     z-index: 1;
 }
 
-li {
+#projects li {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -427,7 +427,7 @@ li {
     animation: rotateCW calc(var(--rotate-speed) * 1s) var(--easing) infinite;
 }
 
-.card {
+#projects .card {
     width: 27%;
     display: flex;
     flex-direction: column;
@@ -446,58 +446,54 @@ li {
     animation: rotateCCW calc(var(--rotate-speed) * 1s) var(--easing) infinite;
 }
 
-a {
+#projects a {
     text-decoration: none;
     color: unset;
 }
 
-.model-name {
+#projects .model-name {
     font-weight: 500;
     font-size: 18px;
     line-height: 150%;
     color: #333;
     display: block;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
-svg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0;
-}
-
-li:nth-child(2),
-li:nth-child(2) .card {
+#projects li:nth-child(2),
+#projects li:nth-child(2) .card {
     animation-delay: calc((var(--rotate-speed)/var(--count)) * -1s);
 }
 
-li:nth-child(3),
-li:nth-child(3) .card {
+#projects li:nth-child(3),
+#projects li:nth-child(3) .card {
     animation-delay: calc((var(--rotate-speed)/var(--count)) * -2s);
 }
 
-li:nth-child(4),
-li:nth-child(4) .card {
+#projects li:nth-child(4),
+#projects li:nth-child(4) .card {
     animation-delay: calc((var(--rotate-speed)/var(--count)) * -3s);
 }
 
-li:nth-child(5),
-li:nth-child(5) .card {
+#projects li:nth-child(5),
+#projects li:nth-child(5) .card {
     animation-delay: calc((var(--rotate-speed)/var(--count)) * -4s);
 }
 
-li:nth-child(6),
-li:nth-child(6) .card {
+#projects li:nth-child(6),
+#projects li:nth-child(6) .card {
     animation-delay: calc((var(--rotate-speed)/var(--count)) * -5s);
 }
 
-li:nth-child(7),
-li:nth-child(7) .card {
+#projects li:nth-child(7),
+#projects li:nth-child(7) .card {
     animation-delay: calc((var(--rotate-speed)/var(--count)) * -6s);
 }
 
-li:nth-child(8),
-li:nth-child(8) .card {
+#projects li:nth-child(8),
+#projects li:nth-child(8) .card {
     animation-delay: calc((var(--rotate-speed)/var(--count)) * -7s);
 }
 
@@ -531,7 +527,7 @@ li:nth-child(8) .card {
     }
 }
 
-.center-circle {
+#projects .center-circle {
     position: absolute;
     width: 230px;
     aspect-ratio: 1 / 1;
@@ -543,7 +539,7 @@ li:nth-child(8) .card {
     border-radius: 50%;
 }
 
-.second-circle {
+#projects .second-circle {
     position: absolute;
     width: 40%;
     aspect-ratio: 1 / 1;
@@ -556,7 +552,7 @@ li:nth-child(8) .card {
     border-radius: 50%;
 }
 
-.last-circle {
+#projects .last-circle {
     position: absolute;
     width: 66%;
     aspect-ratio: 1 / 1;
@@ -569,11 +565,11 @@ li:nth-child(8) .card {
     border-radius: 50%;
 }
 
-.crop {
+#projects .crop {
     -webkit-mask-image: linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 1));
 }
 
-.mask {
+#projects .mask {
     position: absolute;
     top: 0;
     left: 0;
@@ -585,7 +581,7 @@ li:nth-child(8) .card {
     background-image: radial-gradient(100% 50% at 100% 50%, rgba(0, 170, 255, 0.9) 0%, rgba(0, 170, 255, 0.75) 11.79%, rgba(0, 170, 255, 0.65) 21.38%, rgba(0, 170, 255, 0.55) 29.12%, rgba(0, 170, 255, 0.45) 35.34%, rgba(0, 170, 255, 0.35) 40.37%, rgba(0, 170, 255, 0.25) 44.56%, rgba(0, 170, 255, 0.2) 48.24%, rgba(0, 170, 255, 0.15) 51.76%, rgba(0, 170, 255, 0.1) 55.44%, rgba(0, 170, 255, 0.05) 59.63%, rgba(0, 170, 255, 0.02) 64.66%, rgba(0, 170, 255, 0.01) 70.88%, rgba(0, 170, 255, 0) 100%);
 }
 
-.mask:after {
+#projects .mask:after {
     content: "";
     position: absolute;
     width: 1px;
@@ -595,17 +591,11 @@ li:nth-child(8) .card {
     background-image: linear-gradient(180deg, rgba(0, 170, 255, 0) 0%, #00aaff 50%, rgba(0, 170, 255, 0) 100%);
 }
 
-.model-name {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.titreProjet {
+#projects .titreProjet {
     margin: 0;
 }
 
-.langageProjet {
+#projects .langageProjet {
     margin: 0;
     font-size: 0.9rem;
     text-transform: uppercase;
