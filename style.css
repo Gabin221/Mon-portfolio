@@ -51,6 +51,7 @@ nav {
     transform: translate(-150%);
     transition: transform 0.5s ease-in-out;
     text-align: center;
+    z-index: 10;
 }
 
 .navbar .menu-items li {
@@ -627,7 +628,7 @@ img:nth-child(3) {
     background-color: #1ee2e7;
     text-align: center;
     color: #fff;
-    z-index: 100;
+    /* z-index: 100; */
     display: flex;
     align-items: center;
     justify-content: center;
