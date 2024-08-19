@@ -602,31 +602,82 @@ img:nth-child(3) {
     color: #00aaff;
 }
 
-@keyframes display {
-    0% {
-        transform: translateX(50px);
-        opacity: 0;
-    }
+.timeline {
+    position: relative;
+    padding: 0;
+    list-style: none;
+    margin: 0 auto;
+    max-width: 1200px;
+}
 
-    10% {
-        transform: translateX(0);
-        opacity: 1;
-    }
+.timeline:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50px;
+    width: 2px;
+    background-color: #f1f1f1;
+}
 
-    30% {
-        transform: translateX(0);
-        opacity: 1;
-    }
+.timeline>li {
+    position: relative;
+    margin-bottom: 50px;
+    min-height: 50px;
+}
 
-    40% {
-        transform: translateX(-50px);
-        opacity: 0;
-    }
+.timeline>li:before,
+.timeline>li:after {
+    content: " ";
+    display: table;
+}
 
-    100% {
-        transform: translateX(-50px);
-        opacity: 0;
-    }
+.timeline>li:after {
+    clear: both;
+}
+
+.timeline>li .timeline-panel {
+    position: relative;
+    margin-left: 100px;
+    margin-right: 20px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.timeline>li .timeline-image {
+    position: absolute;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    border: 7px solid #f1f1f1;
+    border-radius: 50%;
+    background-color: #1ee2e7;
+    text-align: center;
+    color: #fff;
+    z-index: 100;
+}
+
+.timeline>li .timeline-image h4 {
+    margin-top: 12px;
+    font-size: 10px;
+    line-height: 14px;
+}
+
+.timeline>li.timeline-inverted .timeline-panel {
+    margin-left: 80px;
+}
+
+.timeline .timeline-heading h4 {
+    margin-top: 0;
+    color: inherit;
+}
+
+.timeline .timeline-body>p,
+.timeline .timeline-body>ul {
+    margin-bottom: 0;
 }
 
 /* Media Queries */
@@ -640,5 +691,24 @@ img:nth-child(3) {
 
     .navbar .nav-container a {
         font-size: 1.5rem;
+    }
+
+    .timeline:before {
+        left: 30px;
+    }
+
+    .timeline>li .timeline-panel {
+        margin-left: 80px;
+        padding: 20px;
+        text-align: left;
+    }
+
+    .timeline>li .timeline-image {
+        width: 60px;
+        height: 60px;
+    }
+
+    .timeline>li.timeline-inverted .timeline-panel {
+        margin-left: 80px;
     }
 }
