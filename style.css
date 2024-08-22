@@ -483,6 +483,25 @@ img:nth-child(3) {
     color: #00aaff;
 }
 
+.input-cursor {
+    display: inline-block;
+    width: 2px;
+    height: 42px;
+    background-color: black;
+    margin-left: 8px;
+}
+
+@keyframes blink {
+    0% {opacity: 1;}
+    40% {opacity: 1;}
+    60% {opacity: 0;}
+    100% {opacity: 0;}
+  }
+// Then, inside .input-cursor:
+.input-cursor { 
+  animation: blink .6s linear infinite alternate;
+}
+
 @keyframes display {
     0% {
         transform: translateX(50px);
