@@ -471,7 +471,7 @@ img:nth-child(3) {
     margin-top: 0;
     color: inherit;
 }
-    
+
 #projects .titreProjet {
     margin: 0;
 }
@@ -491,15 +491,26 @@ img:nth-child(3) {
     margin-left: 8px;
 }
 
+.input-cursor {
+    animation: blink .6s linear infinite alternate;
+}
+
 @keyframes blink {
-    0% {opacity: 1;}
-    40% {opacity: 1;}
-    60% {opacity: 0;}
-    100% {opacity: 0;}
-  }
-// Then, inside .input-cursor:
-.input-cursor { 
-  animation: blink .6s linear infinite alternate;
+    0% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
 @keyframes display {
@@ -534,10 +545,12 @@ img:nth-child(3) {
         transform: scale(1);
         box-shadow: 0 0 0 0 rgba(30, 226, 231, 0.7);
     }
+
     70% {
         transform: scale(1.1);
         box-shadow: 0 0 0 20px rgba(30, 226, 231, 0);
     }
+
     100% {
         transform: scale(1);
         box-shadow: 0 0 0 0 rgba(30, 226, 231, 0);
@@ -552,11 +565,11 @@ img:nth-child(3) {
         position: relative;
         /* aspect-ratio: 4/1; */
     }
-    
+
     #projects ul:hover * {
         animation-play-state: paused;
     }
-    
+
     #projects ul {
         list-style-type: none;
         margin: 0;
@@ -567,7 +580,7 @@ img:nth-child(3) {
         outline: 2px dotted #333;
         z-index: 1;
     }
-    
+
     #projects li {
         position: absolute;
         top: 50%;
@@ -576,7 +589,7 @@ img:nth-child(3) {
         width: 100%;
         animation: rotateCW calc(var(--rotate-speed) * 1s) var(--easing) infinite;
     }
-    
+
     #projects .card {
         width: 27%;
         display: flex;
@@ -600,7 +613,7 @@ img:nth-child(3) {
         text-decoration: none;
         color: unset;
     }
-    
+
     #projects .model-name {
         font-weight: 500;
         font-size: 18px;
@@ -611,42 +624,42 @@ img:nth-child(3) {
         justify-content: space-between;
         width: 100%;
     }
-    
+
     #projects li:nth-child(2),
     #projects li:nth-child(2) .card {
         animation-delay: calc((var(--rotate-speed)/var(--count)) * -1s);
     }
-    
+
     #projects li:nth-child(3),
     #projects li:nth-child(3) .card {
         animation-delay: calc((var(--rotate-speed)/var(--count)) * -2s);
     }
-    
+
     #projects li:nth-child(4),
     #projects li:nth-child(4) .card {
         animation-delay: calc((var(--rotate-speed)/var(--count)) * -3s);
     }
-    
+
     #projects li:nth-child(5),
     #projects li:nth-child(5) .card {
         animation-delay: calc((var(--rotate-speed)/var(--count)) * -4s);
     }
-    
+
     #projects li:nth-child(6),
     #projects li:nth-child(6) .card {
         animation-delay: calc((var(--rotate-speed)/var(--count)) * -5s);
     }
-    
+
     #projects li:nth-child(7),
     #projects li:nth-child(7) .card {
         animation-delay: calc((var(--rotate-speed)/var(--count)) * -6s);
     }
-    
+
     #projects li:nth-child(8),
     #projects li:nth-child(8) .card {
         animation-delay: calc((var(--rotate-speed)/var(--count)) * -7s);
     }
-    
+
     #projects .center-circle {
         position: absolute;
         width: 230px;
@@ -658,7 +671,7 @@ img:nth-child(3) {
         box-shadow: 0px 18px 36px -18px rgba(12, 5, 46, 0.3), 0px 30px 60px -12px rgba(12, 5, 46, 0.25);
         border-radius: 50%;
     }
-    
+
     #projects .second-circle {
         position: absolute;
         width: 40%;
@@ -671,7 +684,7 @@ img:nth-child(3) {
         box-shadow: 0px 18px 36px -18px rgba(12, 5, 46, 0.3), 0px 30px 60px -12px rgba(12, 5, 46, 0.25);
         border-radius: 50%;
     }
-    
+
     #projects .last-circle {
         position: absolute;
         width: 66%;
@@ -684,11 +697,11 @@ img:nth-child(3) {
         box-shadow: 0px 18px 36px -18px rgba(12, 5, 46, 0.3), 0px 30px 60px -12px rgba(12, 5, 46, 0.25);
         border-radius: 50%;
     }
-    
+
     #projects .crop {
         -webkit-mask-image: linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 1));
     }
-    
+
     #projects .mask {
         position: absolute;
         top: 0;
@@ -700,7 +713,7 @@ img:nth-child(3) {
         background-repeat: no-repeat;
         background-image: radial-gradient(100% 50% at 100% 50%, rgba(0, 170, 255, 0.9) 0%, rgba(0, 170, 255, 0.75) 11.79%, rgba(0, 170, 255, 0.65) 21.38%, rgba(0, 170, 255, 0.55) 29.12%, rgba(0, 170, 255, 0.45) 35.34%, rgba(0, 170, 255, 0.35) 40.37%, rgba(0, 170, 255, 0.25) 44.56%, rgba(0, 170, 255, 0.2) 48.24%, rgba(0, 170, 255, 0.15) 51.76%, rgba(0, 170, 255, 0.1) 55.44%, rgba(0, 170, 255, 0.05) 59.63%, rgba(0, 170, 255, 0.02) 64.66%, rgba(0, 170, 255, 0.01) 70.88%, rgba(0, 170, 255, 0) 100%);
     }
-    
+
     #projects .mask:after {
         content: "";
         position: absolute;
@@ -715,27 +728,27 @@ img:nth-child(3) {
         from {
             transform: translate3d(0px, -50%, -1px) rotate(-45deg);
         }
-    
+
         to {
             transform: translate3d(0px, -50%, 0px) rotate(-315deg);
         }
     }
-    
+
     @keyframes rotateCCW {
         from {
             transform: rotate(45deg);
         }
-    
+
         to {
             transform: rotate(315deg);
         }
     }
-    
+
     @keyframes pulseGlow {
         from {
             background-size: 60%;
         }
-    
+
         to {
             background-size: 100%;
         }
@@ -765,7 +778,7 @@ img:nth-child(3) {
         padding: 0;
         width: 100%;
     }
-    
+
     #projects li {
         width: 100%;
         display: flex;
@@ -773,7 +786,7 @@ img:nth-child(3) {
         justify-content: center;
         margin: 0 0 30px 0;
     }
-    
+
     #projects .card {
         display: flex;
         flex-direction: column;
@@ -790,7 +803,7 @@ img:nth-child(3) {
         color: #535062;
         transition: transform 0.3s, box-shadow 0.3s;
     }
-    
+
     #projects .card:hover {
         transform: translateY(-10px);
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -800,7 +813,7 @@ img:nth-child(3) {
         text-decoration: none;
         color: unset;
     }
-    
+
     #projects .model-name {
         font-weight: 500;
         font-size: 18px;
@@ -811,7 +824,7 @@ img:nth-child(3) {
         justify-content: space-between;
         width: 100%;
     }
-    
+
     #projects .void {
         padding: 0;
     }
