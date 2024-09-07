@@ -323,6 +323,7 @@ button[type="submit"]:hover {
 
 #skills {
     padding: 50px 0;
+    height: fit-content;
     text-align: center;
     font-family: 'Arial', sans-serif;
 }
@@ -368,7 +369,6 @@ button[type="submit"]:hover {
 
 #skills .container div.latex p {
     font-family: 'TeX Gyre Pagella', serif;
-    /* Assurez-vous que cette police est incluse dans votre projet */
     font-size: 1.5em;
     color: #333;
 }
