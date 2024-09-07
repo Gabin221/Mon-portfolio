@@ -13,10 +13,14 @@ body {
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 nav {
     background-color: #333;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
 }
 
 .container {
@@ -44,12 +48,12 @@ nav {
     align-items: center;
     position: absolute;
     top: 62px;
-    left: 0;
-    right: 0;
+    width: 80%;
     height: calc(100vh - 62px);
     background-color: #00aaff;
+    opacity: 0.8;
     transform: translate(-150%);
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-out;
     text-align: center;
     z-index: 10;
 }
@@ -194,9 +198,9 @@ section p {
 
 .intro-text img {
     width: 150px;
-    border-radius: 50%;
     margin-top: 20px;
     border: 5px solid #fff;
+    border-radius: 20px;
 }
 
 /* Contact section styles */
@@ -762,6 +766,7 @@ img:nth-child(3) {
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
+        width: 100%;
     }
 
     .navbar .nav-container a {

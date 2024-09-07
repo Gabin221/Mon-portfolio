@@ -1,5 +1,3 @@
-// script.js
-
 // Sélectionnez les éléments nécessaires
 const menuCheckbox = document.getElementById('menu-checkbox');
 const menuItems = document.querySelectorAll('.menu-item');
