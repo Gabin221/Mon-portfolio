@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const text = `Gabin Serrurot-Portfolio`;
+    const text = `Gabin Serrurot-Développeur web et mobile`;
     let index = 0;
 
     function typeWriter() {

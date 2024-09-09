@@ -17,7 +17,7 @@ body {
 }
 
 nav {
-    background-color: #333;
+    background-color: #000;
     position: sticky;
     top: 0px;
     z-index: 10;
@@ -48,7 +48,7 @@ nav {
     align-items: center;
     position: absolute;
     top: 62px;
-    width: 80%;
+    width: 20%;
     height: calc(100vh - 62px);
     background-color: #00aaff;
     opacity: 0.8;
@@ -77,8 +77,6 @@ nav {
 
 .navbar .nav-container a:hover {
     font-weight: bolder;
-    transform: scale(1, 1.5);
-    color: #333;
 }
 
 .nav-container .checkbox {
@@ -159,6 +157,7 @@ section {
     margin: 20px auto;
     border-radius: 8px;
     width: 90%;
+    filter: drop-shadow(30px 10px 4px #999);
 }
 
 section h2 {
@@ -171,6 +170,7 @@ section h2 {
 
 section p {
     max-width: 800px;
+    width: 80%;
     margin: 0 auto;
     text-align: center;
     font-size: 1.2em;
@@ -203,7 +203,17 @@ section p {
     border-radius: 20px;
 }
 
-/* Contact section styles */
+.logo img {
+    height: 55px;
+    border-radius: 5px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    height: 62px;
+}
+
 #contact {
     background: #333;
     color: #fff;
@@ -228,7 +238,8 @@ section p {
 }
 
 #contact input,
-#contact textarea {
+#contact textarea,
+#contact button {
     width: 90%;
     margin: auto;
     padding: 10px;
@@ -236,6 +247,7 @@ section p {
     border-radius: 5px;
     font-size: 1em;
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
 }
 
 #contact button[type="submit"] {
@@ -247,12 +259,12 @@ section p {
     cursor: pointer;
     font-size: 1em;
     transition: background 0.3s;
-    width: 90%;
-    margin: auto;
 }
 
-button[type="submit"]:hover {
-    background: #777;
+#contact button[type="submit"]:hover {
+    background: #666;
+    transform: scale(1.05);
+    transition: transform 0.3s;
 }
 
 /* Hyperlinks */
@@ -479,11 +491,13 @@ img:nth-child(3) {
 }
 
 #projects .titreProjet {
-    margin: 0;
+    width: auto;
+    margin-left: 0;
 }
 
 #projects .langageProjet {
-    margin: 0;
+    width: auto;
+    margin-right: 0;
     font-size: 0.9rem;
     text-transform: uppercase;
     color: #00aaff;
@@ -728,6 +742,10 @@ img:nth-child(3) {
         right: 0;
         display: block;
         background-image: linear-gradient(180deg, rgba(0, 170, 255, 0) 0%, #00aaff 50%, rgba(0, 170, 255, 0) 100%);
+    }
+
+    #projects .presentationProjet {
+        text-align: justify;
     }
 
     @keyframes rotateCW {
