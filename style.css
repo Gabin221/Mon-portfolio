@@ -414,6 +414,14 @@ img:nth-child(3) {
     animation-delay: 6s;
 }
 
+.pic-ctn[data-skill="Langage de script"] > img {
+    animation: display-2img 6s infinite;
+}
+
+.pic-ctn[data-skill="Langage de script"] img:nth-child(2) {
+    animation-delay: 3s;
+}
+
 #about .timeline {
     position: relative;
     padding: 0;
@@ -535,7 +543,7 @@ img:nth-child(3) {
 
 @keyframes display {
     0% {
-        transform: translateX(50px);
+        transform: translateX(50);
         opacity: 0;
     }
 
@@ -550,12 +558,39 @@ img:nth-child(3) {
     }
 
     40% {
-        transform: translateX(-50px);
+        transform: translateX(-50);
         opacity: 0;
     }
 
     100% {
-        transform: translateX(-50px);
+        transform: translateX(-50);
+        opacity: 0;
+    }
+}
+
+@keyframes display-2img {
+    0% {
+        transform: translateX(50);
+        opacity: 0;
+    }
+
+    10% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    40% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateX(-50);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(-50);
         opacity: 0;
     }
 }

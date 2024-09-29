@@ -103,19 +103,20 @@
             <div data-skill="Kotlin">
                 <img src="Images/logoKotlin.jpeg" alt="Kotlin">
             </div>
-            <div data-skill="Bash">
-                <img src="Images/logoBash.png" alt="Bash">
-            </div>
-            <div class="pic-ctn" data-skill="Langages du web">
-                <img class="pic" src="Images/logoHtml.png" alt="HTML">
-                <img class="pic" src="Images/logoCss.png" alt="CSS">
-                <img class="pic" src="Images/logoJs.png" alt="JavaScript">
+            <div class="pic-ctn" data-skill="Langage de script">
+                <img class="pic" src="Images/logoBash.png" alt="Bash">
+                <img class="pic" src="Images/logoPowershell.png" alt="Powershell">
             </div>
             <div data-skill="C++">
                 <img src="Images/logoCpp.png" alt="C++">
             </div>
             <div data-skill="Python">
                 <img src="Images/logoPython.jpeg" alt="Python">
+            </div>
+            <div class="pic-ctn" data-skill="Langages du web">
+                <img class="pic" src="Images/logoHtml.png" alt="HTML">
+                <img class="pic" src="Images/logoCss.png" alt="CSS">
+                <img class="pic" src="Images/logoJs.png" alt="JavaScript">
             </div>
             <div class="latex" data-skill="LaTeX">
                 <p>LaTeX</p>
@@ -221,6 +222,25 @@
 
     <script src="saisie.js"></script>
     <script src="menu.js"></script>
+
+    <script>
+        const images = [
+            'Images/logoBash.png',
+            'Images/logoPowershell.png',
+            'Images/logoHtml.png',
+            'Images/logoCss.png',
+            'Images/logoJs.png',
+            'Images/logoKotlin.jpeg',
+            'Images/logoCpp.png',
+            'Images/logoPython.jpeg'
+        ];
+    
+        images.forEach(src => {
+            const img = new Image();
+            img.src = src;
+        });
+    </script>
+    
 </body>
 
 </html>
